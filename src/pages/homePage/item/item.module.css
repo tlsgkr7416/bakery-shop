@@ -1,0 +1,30 @@
+.container {
+    height: 300px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.imgContainer{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid black;
+}
+
+.imgContainer img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.itemContent {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.itemContent li{
+    padding: 2px;
+    text-align: center;
+}

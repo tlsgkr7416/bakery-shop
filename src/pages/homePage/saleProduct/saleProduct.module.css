@@ -1,0 +1,71 @@
+.container {
+    width: 400px;
+    height: 165px;
+    border: 1px solid black;
+    position: fixed;
+    top: 450px;
+    left: 1100px;
+    z-index: 1;
+    display: flex;
+    align-self: flex-start;
+}
+
+.itemInformation {
+    list-style: none;
+    padding-left: 0px;
+    width: 60%;
+    margin-left: 17px;
+}
+
+.itemInformation li {
+    padding: 2px;
+}
+
+.closeContainer {
+    margin-right: 10px;
+}
+
+.closeContainer i {
+    cursor: pointer;
+}
+
+.priceContainer {
+    display: flex;
+}
+
+.price{
+   margin-left: 5px;
+   margin-right: 15px;
+   text-decoration: line-through;
+}
+
+.imgContainer {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.imgContainer img{
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    bottom: 0px;
+    right: 0px;
+    width: 95%;
+    height: 95%;
+}
+
+.saleProduct {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.timeContainer {
+    display: flex;
+}
+
+.date {
+    margin-left: 5px;
+    margin-right: 12px;
+}

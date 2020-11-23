@@ -1,0 +1,3 @@
+export const REQUEST_REPLY = 'REQUEST_REPLY';
+export const REPLY_UPDATE = 'REPLY_UPDATE';
+export const REPLY_DELETE = 'REPLY_DELETE';

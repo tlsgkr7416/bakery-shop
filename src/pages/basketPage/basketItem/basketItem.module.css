@@ -1,0 +1,23 @@
+.container {
+    width: 150px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.imgContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.imgContainer img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

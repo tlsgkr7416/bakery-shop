@@ -1,0 +1,50 @@
+.container{
+    width: 90%;
+    border-top: 1px solid black;
+    padding: 15px;
+}
+
+.container h1{
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+.inputContainer {
+    width: 100%;
+    margin-bottom: 100px;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inputContent {
+    display: block;
+}
+
+.inputContent input {
+    width: 600px;
+    height: 40px;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+
+.inputContent button {
+    height: 45px;
+    width: 60px;
+}
+
+.starContainer {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+}
+
+.starContainer li {
+    cursor: pointer;
+    padding: 2px;
+}

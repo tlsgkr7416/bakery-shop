@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.informationContainer {
+    width: 45%;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 60px;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.informationContainer li {
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.informationContainer li input {
+    margin-left: 30px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.informationContainer li .addr {
+    margin-left: 70px;
+}
+
+.informationContainer li .name {
+    margin-left: 70px;
+}
+
+.buyContainer {
+    margin: 0 auto;
+}
+
+.buyContainer button {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.search {
+    height: 35px;
+    width: 55px;
+    margin-left: 15px;
+}

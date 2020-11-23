@@ -1,0 +1,15 @@
+.container {
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.container span {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.container span:hover{
+    background-color: sandybrown;
+}

@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: silver;
+}
+
+.container div {
+    padding: 2px;
+}

@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
