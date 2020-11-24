@@ -18,7 +18,10 @@ export default function ItemList() {
 
     return (
         products.loding ? (
-           <div>...제품 로딩중</div>
+            <div className={style.loadingBox}>
+                <div className={style.dim}></div>
+                <div className={style.circle}></div>
+            </div>
         ) : (
         products.error ? (
             <div>{products.error}</div>

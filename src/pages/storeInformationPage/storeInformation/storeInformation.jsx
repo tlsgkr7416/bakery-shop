@@ -10,9 +10,9 @@ export default function StoreInformation() {
         <React.Fragment>
             <Header />
             <main className={style.container}>
-                <h1>가게정보</h1>
-                <StoreMap />
+                <h1>BRAND STORY</h1>
                 <StoreContent />
+                <StoreMap />
             </main>
             <Footer />
         </React.Fragment>    

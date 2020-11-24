@@ -9,6 +9,8 @@ router.post('/login', passport.authenticate('local', {failureRedirect: 'account/
   ctrl.post_login
 );
 
+router.get('/authority', ctrl.get_authority);
+
 router.get('/fail', ctrl.get_fail);
 
 module.exports = router;

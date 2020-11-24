@@ -6,14 +6,20 @@ import BuyerInformation from '../buyerInformation/buyerInformation';
 import { useSelector } from 'react-redux';
 
 export default function Basket() {
+    const user = useSelector(store => store.user);
+    if (!user.data.id) {
+        window.location.href="http://localhost:3000"
+    }
+
     const cart = useSelector(store => store.carts);
     const products = Object.values(cart.data.Products);
     
     const makeSum = () => {
         return products.reduce((acc, cur) => {
               return acc + (cur.price * cur.productCart.purchaseQuantity)
-        },0);       
+        }, 0);       
     }
+
 
     return (
         <React.Fragment>

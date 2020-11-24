@@ -1,6 +1,5 @@
 import { USER_REQUEST, LOGIN_SUCCESS, LOGIN_FAIL } from './actionTypes';
 
-
 export const userRequest = () => ({
     type: USER_REQUEST, 
 });

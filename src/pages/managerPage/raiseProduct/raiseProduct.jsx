@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import style from './raiseProduct.module.css';
+import { useSelector } from 'react-redux';
 
 export default function RaiseProduct() {
+  const user = useSelector(store => store.user);
+  if (user.data.id !== 'manager') {
+      window.location.href="http://localhost:3000"
+  }
   const [preImg, setPreImg] = useState([]);
   const [radio, setRadio] = useState(null);
 

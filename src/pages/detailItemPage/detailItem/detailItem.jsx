@@ -13,16 +13,22 @@ const socket = io.connect();
 
 export default function DetailItem() {
     const { id } = useParams();
+    const user = useSelector(store => store.user);
+    if (!user.data.id) {
+        window.location.href="http://localhost:3000"
+    }
+
     const inputAmount = useRef();
     const dispatch = useDispatch();
+
     const product = useSelector(store => (    //filter로 state값을 변경시켜줘서 좀 문제가 되나 고민....만약 state값 변경되면 실행되나 test
         store.products.data.filter(product => (  //state 값 변경 안되면 실행 안되나 test
             product.id == id
         ))[0]
     ));
+
     
     const [amount, setAmount] = useState(1);
-    const user = useSelector(store => store.user);
     const cart = useSelector(store => store.carts);
     const userId = user.data.id;
     const pictures = JSON.parse(product.picture);

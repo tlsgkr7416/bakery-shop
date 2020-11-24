@@ -34,7 +34,10 @@ export default function Home() {
     
     return (   //로딩 한번 다시 보기 loding 오타..
         user.loding || cart.loding ? (
-        <div>로딩중...</div>
+        <div className={style.loadingBox}>
+            <div className={style.dim}></div>
+            <div className={style.circle}></div>
+        </div>
         ) : user.error || cart.error ? (
         <div>{user.error || cart.error}</div>
         ) : (

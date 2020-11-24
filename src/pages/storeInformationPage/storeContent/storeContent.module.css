@@ -1,4 +1,30 @@
 .container {
+    width: 100%;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.titleContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 450px;
+    height: 450px;
+}
+
+.content {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 19px;
+    margin-left: 30px;
 }

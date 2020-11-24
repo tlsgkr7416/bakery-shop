@@ -59,7 +59,11 @@ export default function ReplyList({userName, productId, userId}) {
     return (
        <section className={style.container}>
            <h1>상품평</h1>
-           {loading ? '...로딩중' : currentPagePosts.map((reply, index) => <ReplyItem key={index} reply={reply} userId={userId}/>)}
+           {loading ? (<div className={style.loadingBox}>
+                        <div className={style.dim}></div>
+                        <div className={style.circle}></div>
+                       </div>) : 
+           currentPagePosts.map((reply, index) => <ReplyItem key={index} reply={reply} userId={userId}/>)}
            <div className={style.inputContainer}>
                <span>댓글 :</span>
                <div className={style.inputContent}>

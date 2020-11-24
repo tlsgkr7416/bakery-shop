@@ -19,4 +19,8 @@ exports.get_fail = (req, res) => {
     res.send('<script>alert("로그인 실패");location.href="/";</script>');
 }
 
+exports.get_authority = (req, res) => {
+    res.json(req.user);
+}
+
 exports.post_login = (req, res) => res.redirect('/home');
