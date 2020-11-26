@@ -31,8 +31,9 @@ exports.post_cart = async (req, res) => {
 exports.get_cart = async (req, res) => {
     const user = await models.Users.findOne({
         where: {id: req.user.id},
-        include: models.Carts,
+        include: ['Cart']
     });
+
     const cart = await models.Carts.findOne({
         where: {id: user.Cart.id},
         include: models.Products,

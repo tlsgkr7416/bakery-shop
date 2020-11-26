@@ -18,7 +18,7 @@ class App {
         db.sequelize.authenticate()
         .then(() =>{
             console.log('connection successfully');
-           return db.sequelize.sync();
+             return db.sequelize.sync();
            //return db.sequelize.drop();
         })
         .then(() => {
